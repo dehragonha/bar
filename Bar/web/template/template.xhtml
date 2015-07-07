@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>TODO supply a title</title>
+        <h:outputStylesheet library="css" name="estilos.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <div id="corpo" align="center">
+            <h:form id="form">
+                <p:layout id="layout" fullPage="true">
+                    <p:layoutUnit position="north" size="110">
+                        <p:graphicImage library="imagens" name="fundo_topo.jpg"/>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="west" size="185">
+                        <p:menu id="menu">
+                            <p:submenu label="Menu">
+                                <p:menuitem value="Vendas" icon="ui-icon-cart" />
+                                <p:menuitem value="Cadastrar produto" icon="ui-icon-plus" />
+                                <p:menuitem value="Total de Vendas" icon="ui-icon-note" />
+                            </p:submenu>
+                        </p:menu>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="center">
+                        <ui:insert name="centro">
+                            Centro :D
+                        </ui:insert>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="south"  size="200">
+                        <ui:insert name="carrinho">
+                            carrinho
+                        </ui:insert>
+                    </p:layoutUnit>
+
+                </p:layout>
+            </h:form>
+        </div>
+    </h:body>
+</html>
